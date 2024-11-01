@@ -27,3 +27,29 @@ $(document).ready(function () {
     );
   });
 });
+
+//Scroll animado
+function elementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  const windowHeight =
+    window.innerHeight || document.documentElement.clientHeight;
+  const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+
+  // Verifica se a div está parcialmente visível
+  return (
+    rect.top <= windowHeight * 0.8 && // Ativa antes de chegar ao topo completo
+    rect.bottom >= windowHeight * 0.2 // E permanece até 20% do final
+  );
+}
+document.addEventListener("DOMContentLoaded", function () {
+  function handleScrollAnimation() {
+    document.querySelectorAll(".scroll-animation").forEach((el) => {
+      if (elementInViewport(el)) {
+        el.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", handleScrollAnimation);
+  handleScrollAnimation();
+});
