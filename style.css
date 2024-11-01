@@ -109,16 +109,36 @@ body {
   }
 }
 
-/* Animação Scroll */
-.scroll-animation {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  position: relative; /* Adiciona posição relativa */
+/* Rede social */
+#rede-social {
+  position: fixed;
+  top: 50%;
+  right: 0%;
+  z-index: 5;
 }
-.scroll-animation.active {
-  opacity: 1;
-  transform: translateY(0);
+#rede-social .quadrado {
+  padding: 8px;
+  border-radius: 10px 0 0 10px;
+  height: 46px;
+  margin-bottom: 5px;
+}
+#rede-social .instagram svg {
+  fill: var(--D3E1EC);
+}
+#rede-social .instagram {
+  background-color: #833ab4;
+}
+#rede-social .whatsapp {
+  background-color: #25d366;
+}
+#rede-social .instagram:hover,
+#rede-social .whatsapp:hover {
+  background-color: var(--EB8E0F);
+}
+@media screen and (max-width: 575px) {
+  #rede-social {
+    display: none;
+  }
 }
 
 /* Menu */
@@ -144,6 +164,11 @@ nav a,
 }
 nav a:hover,
 .menu-fixed a:hover {
+  background: var(--00335E);
+  color: var(--EDF1F5);
+}
+nav .contato-ativo,
+.menu-fixed .contato-ativo {
   background: var(--00335E);
   color: var(--EDF1F5);
 }
@@ -347,6 +372,7 @@ header.menu-fixed {
 #diferenciais .pontualidade,
 #diferenciais .atendimento {
   position: relative;
+  overflow: hidden;
 }
 #diferenciais .texto-botao {
   position: absolute;
@@ -376,6 +402,7 @@ header.menu-fixed {
 @media screen and (max-width: 575px) {
   #diferenciais .conteudo {
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 400px;
   }
 }
 
@@ -499,6 +526,9 @@ header.menu-fixed {
   font-size: 14px;
   letter-spacing: 1.7px;
   margin-bottom: 20px;
+}
+#rodape .conteudo a {
+  text-decoration: none;
 }
 @media screen and (max-width: 575px) {
   #rodape .conteudo {
