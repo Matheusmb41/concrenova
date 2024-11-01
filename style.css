@@ -126,7 +126,7 @@ body {
   fill: var(--D3E1EC);
 }
 #rede-social .instagram {
-  background-color: #833ab4;
+  background-color: #5a287c;
 }
 #rede-social .whatsapp {
   background-color: #25d366;
@@ -365,44 +365,29 @@ header.menu-fixed {
 #diferenciais .conteudo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 530px;
-  background-color: var(--000000);
+  text-align: center;
+  gap: 60px;
 }
-#diferenciais .qualidade,
-#diferenciais .pontualidade,
-#diferenciais .atendimento {
-  position: relative;
-  overflow: hidden;
+#diferenciais .conteudo .cor:hover path,
+#diferenciais .conteudo .cor:hover h3 {
+  fill: var(--EB8E0F);
+  color: var(--EB8E0F);
 }
-#diferenciais .texto-botao {
-  position: absolute;
-  bottom: 30px;
-  left: 35px;
-}
-#diferenciais .mascara {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: var(--020B14);
-  opacity: 0.7;
-}
-#diferenciais img {
-  width: 100%;
-  height: 100%;
-}
-#diferenciais .texto-botao {
-  z-index: 1;
-}
-#diferenciais .texto-botao h3 {
-  color: var(--D3E1EC);
-  font-weight: 400;
-  font-size: 16px;
+#diferenciais .conteudo h3 {
+  margin: 20px 0 20px;
+  font-size: 20px;
   letter-spacing: 1.7px;
+  color: var(--00335E);
+}
+#diferenciais .conteudo p {
+  font-size: 14px;
+  letter-spacing: 1.7px;
+  color: var(--154C7A);
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 575px) {
   #diferenciais .conteudo {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 400px;
   }
 }
 
