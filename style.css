@@ -117,19 +117,14 @@ body {
   z-index: 5;
 }
 #rede-social .quadrado {
-  padding: 8px;
-  border-radius: 10px 0 0 10px;
+  padding: 10.5px 20px;
+  border-radius: 5px 0 0 5px;
   height: 46px;
   margin-bottom: 5px;
+  background-color: var(--00335E);
 }
 #rede-social .instagram svg {
   fill: var(--D3E1EC);
-}
-#rede-social .instagram {
-  background-color: #5a287c;
-}
-#rede-social .whatsapp {
-  background-color: #25d366;
 }
 #rede-social .instagram:hover,
 #rede-social .whatsapp:hover {
@@ -237,10 +232,58 @@ header.menu-fixed {
 .banner-inicial {
   width: 100%;
   height: 100vh;
-  background-image: url("img/banner_inicio.png");
+  background-image: url("img/banner_inicio.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 30%;
+}
+#banner-inicio .mascara {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--020B14);
+  z-index: -1;
+}
+#banner-inicio .texto-inicial {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--EDF1F5);
+  width: 100%;
+  max-width: 1192px;
+  letter-spacing: 1.7px;
+  font-weight: 400;
+}
+#banner-inicio .texto-inicial h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+  width: 52%;
+}
+#banner-inicio .texto-inicial b {
+  color: var(--EB8E0F);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#banner-inicio .btn-1 {
+  margin-left: 0;
+}
+@media screen and (max-width: 575px) {
+  #banner-inicio .texto-inicial {
+    width: 80%;
+    text-align: center;
+  }
+  #banner-inicio .texto-inicial h1 {
+    width: 100%;
+    font-size: 34px;
+  }
+  #banner-inicio .btn-1 {
+    margin: auto;
+    margin-top: 50px;
+  }
 }
 
 /* Produtos */
