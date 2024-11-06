@@ -28,3 +28,8 @@ $(document).ready(function () {
     }
   });
 });
+
+// Impede a seleção de texto na página
+document.addEventListener("selectstart", function (event) {
+  event.preventDefault();
+});

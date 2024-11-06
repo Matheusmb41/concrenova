@@ -18,6 +18,15 @@ body {
   font-style: normal;
 }
 
+/* Define o cursor padrão para evitar o estilo de seleção de texto */
+p,
+h1,
+h2,
+h3,
+span {
+  cursor: default;
+}
+
 /* Cores */
 :root {
   --154C7A: #154c7a;
@@ -512,16 +521,17 @@ header.menu-fixed {
 /* Parceiros */
 #parceiros .conteudo {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
+  grid-template-columns: repeat(3, 100px);
   align-items: center;
+  gap: 200px;
+  justify-content: center;
 }
 #parceiros .conteudo img {
   border-radius: 50%;
 }
 @media screen and (max-width: 575px) {
   #parceiros .conteudo {
-    grid-template-columns: repeat(2, 100px);
+    grid-template-columns: repeat(1, 100px);
     gap: 70px;
     justify-content: center;
   }
@@ -556,7 +566,9 @@ header.menu-fixed {
   margin-bottom: 20px;
 }
 #rodape .conteudo a {
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: var(--EB8E0F);
+  text-underline-offset: 5px;
 }
 @media screen and (max-width: 575px) {
   #rodape .conteudo {
