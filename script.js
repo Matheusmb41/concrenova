@@ -33,3 +33,13 @@ $(document).ready(function () {
 document.addEventListener("selectstart", function (event) {
   event.preventDefault();
 });
+
+// Parceiros
+$(".slider-nav").slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  dots: true,
+  focusOnSelect: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});

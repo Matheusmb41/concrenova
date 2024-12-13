@@ -520,21 +520,13 @@ header.menu-fixed {
 
 /* Parceiros */
 #parceiros .conteudo {
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  align-items: center;
-  gap: 200px;
-  justify-content: center;
+  width: 1130px;
+  display: block;
+  margin: 0 auto;
 }
-#parceiros .conteudo img {
+.slick-slide img {
+  margin: auto;
   border-radius: 50%;
-}
-@media screen and (max-width: 575px) {
-  #parceiros .conteudo {
-    grid-template-columns: repeat(1, 100px);
-    gap: 70px;
-    justify-content: center;
-  }
 }
 
 /* Rodape */
