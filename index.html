@@ -15,6 +15,7 @@
   <!-- Clientes -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css'>
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
@@ -72,13 +73,40 @@
   </div>
 
   <!-- Banner inicial -->
-  <main id="banner-inicio">
-    <div class="mascara"></div>
-    <div class="banner-inicial"></div>
-    <div class="texto-inicial">
-      <h1>Transforme seus projetos com a <b>Concrenova</b></h1>
-      <a class="btn-1" href="https://wa.me/552732551663" target="_blank">Faça um orçamento</a>
+  <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel" data-slide-to="1"></li>
+      <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Conteúdo -->
+    <div class="carousel-inner">
+      <div class="active item banner-inicio">
+        <div class="texto-inicial">
+          <h1>Transforme seus projetos com a <b>Concrenova</b></h1>
+          <a class="btn-1" href="https://wa.me/552732551663" target="_blank">Faça um orçamento</a>
+        </div>
+        <img src="img/1_banner.jpg" alt="">
+      </div>
+      <div class="item banner-inicio">
+        <div class="texto-inicial">
+          <h1>Qualidade e precisão para seus projetos com a <b>Concrenova</b></h1>
+          <a class="btn-1" href="https://wa.me/552732551663" target="_blank">Faça um orçamento</a>
+        </div>
+        <img src="img/2_banner.jpg" alt="">
+      </div>
+      <div class="item banner-inicio">
+        <div class="texto-inicial">
+          <h1>Projetos robustos começam com o melhor concreto: <b>Concrenova</b></h1>
+          <a class="btn-1" href="https://wa.me/552732551663" target="_blank">Faça um orçamento</a>
+        </div>
+        <img src="img/banner_inicio.jpg" alt="">
+      </div>
     </div>
+    <!-- Navegação -->
+    <a class="carousel-control left" href="#carousel" data-slide="prev"></a>
+    <a class="carousel-control right" href="#carousel" data-slide="next"></a>
+  </div>
   </main>
 
   <!-- Produtos -->
@@ -387,6 +415,7 @@
   <!-- Scritps -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js'></script>
   <script src="script.js"></script>
 </body>
 

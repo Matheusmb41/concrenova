@@ -43,3 +43,6 @@ $(".slider-nav").slick({
   autoplay: true,
   autoplaySpeed: 2000,
 });
+
+// Banner inicial
+$(".carousel").carousel();
